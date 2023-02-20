@@ -7,17 +7,23 @@ class Customer:
         self.__phone = phone
         self.__member_status = member_status
 
-    def get_attributes(self):
-        attributes = [
-            self.__customerid,
-            self.__name,
-            self.__address,
-            self.__email,
-            self.__phone,
-            self.__member_status,
-        ]
-        for attribute in attributes:
-            return attribute
+    def get_customerid(self):
+        return self.customerid
+
+    def get_name(self):
+        return self.name
+
+    def get_address(self):
+        return self.address
+
+    def get_email(self):
+        return self.email
+
+    def get_phone(self):
+        return self.phone
+
+    def get_member_status(self):
+        return self.member_status
 
 
 class Transaction:
@@ -28,13 +34,14 @@ class Transaction:
         self.__cost = cost
         self.__customerid = customerid
 
-    def get_attributes(self):
-        attributes = [
-            self.__data,
-            self.__item,
-            self.__name,
-            self.__cost,
-            self.__customerid,
-        ]
-        for attribute in attributes:
-            return attribute
+    def get_date(self):
+        return self.date
+
+    def get_item_name(self):
+        return self.item
+
+    def get_cost(self):
+        return self.name
+
+    def get_customer_id(self):
+        return self.customerid
