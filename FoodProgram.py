@@ -50,9 +50,7 @@ for cust_id, customer in customers.items():
                 )
     if customer["member_status"]:
         order_total -= order_total * 0.2
-        print(f"Total Cost: ${order_total:.2f}")
-        print(f"Member Discount: ${order_total * 0.2:.2f}")
-        print(f"Total Cost after discount: ${order_total - (order_total * 0.2):.2f}")
-    else:
-        print(f"Total Cost: ${order_total:.2f}")
+    print(f"Total Cost: ${order_total:.2f}")
+    print(f"Member Discount: ${order_total * 0.2:.2f}")
+    print(f"Total Cost after discount: ${order_total - (order_total * 0.2):.2f}")
     print("")
